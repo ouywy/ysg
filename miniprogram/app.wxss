@@ -1,0 +1,94 @@
+/*  app.wxss  */
+/*引入icon图标*/
+@import "./style/iconfont.wxss";
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  通用样式 */
+/* 自定义全局样式 start*/
+/*  大标题 */
+.bigTitle{
+  color: var(--title);
+  font-size: 140%;
+  font-weight: 700;
+}
+/*  次标题 */
+.minorTitle{
+color: var(--content);
+font-size: 100%;
+}
+/*  小标题 */
+.smallTitle{
+font-size: 110%;
+color: var(--h1Color);
+}
+/*  正文  */
+.textConter{
+font-size: 100%;
+}
+/*  Flex布局元素居中  */
+.flexCenter{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*  父元素加 Flex*/
+.flex{
+display: flex;
+}
+/*	下边距*/
+.marginB{
+	margin-bottom: 10rpx;
+}
+page{
+	/*  全局背景色 */
+	--backColor: #f8f8f9;
+	/* 全局字体大小 */
+	--fontSize: 28rpx;
+
+	/*  全局变量 start */
+	/*字体颜色*/
+	--h1Color:#000;
+	--h2Color:#333;
+	--h3Color:#666;
+	--h4Color:#999;
+	/*界线、边框*/
+	--lineColor:#eee;
+	/*激活*/
+	--activeColor:#ff7200;
+	/*价格*/
+	--priceColor:#FF4400;
+	/*btn-background*/
+	/*--backColor:#ffe4d0;*/
+	/* 元素背景色*/
+	--blockColor:#fff;
+
+	/*系统自带的样式*/
+	background: #f6f6f6;
+
+	/*  iview UI color*/
+	/*主色*/
+	--primary:#2d8cf0;
+	--lightPrimary:#5cadff;
+	--darkPrimary:#2b85e4;
+	/*辅助色*/
+	--success:#19be6b;
+	--warning:#ff9900;
+	--error:#ed3f14;
+	/*中性色*/
+	--title:#1c2438;
+	/*正文*/
+	--content:#495060;
+	/*辅助*/
+	--subColor:#ed3f14;
+	/*失效*/
+	--disabled:#bbbec4;
+	--border: #dddee1;
+	/*分割线*/
+	--divider:#e9eaec;
+	--abckground:#f8f8f9;
+}
+/* 自定义全局样式 end

@@ -1,0 +1,58 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图 start -->
+<!-- 
+	1.swiper标签存在默认的宽高：100%*150px
+	2.image标签也存在默认的宽高：320px*240px
+	3.设计轮播图和图片的原则：
+		1.根据原图的宽高来决定图片的展示
+		2.让图片的高度自适应，宽度=100%
+		3.让swiper标签的高度=图片的高度
+ -->
+<view class="swiper-v">
+	<swiper indicator-dots
+		indicator-color="rgba(0, 0, 0, .3)"
+		indicator-active-color="#f50"
+		autoplay
+		current="0"
+		interval="3000"
+		duration="300"
+		circular>
+		<block wx:for="{{swiperList}}" wx:key="index">
+			<swiper-item >
+				<navigator url=""  open-type="navigate">
+					<image class="image" src="{{item.img_src}}" mode="widthFix"></image>
+				</navigator>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<!-- 轮播图 end -->
+<view class="view">
+	<image class="image" src="../../images/hh.jpg" mode="scaleToFill"></image>
+</view>
+
+<!-- 商品展示 start -->
+<block wx:for="{{goodsList}}" wx:key="index">
+	<view class="goods-show-v">
+		<!-- 图片栏 -->
+		<view class="image-v">
+			<image class="" src="{{item.img_src}}" mode="scaleToFill"></image>
+		</view>
+
+		<!-- 标题&信息栏 -->
+		<view class="title-v">
+			<view class="title-outer">
+				<view class="title">{{item.title}}</view>
+				<view class="descr"></view>
+			</view>
+			
+			<view class="price-outer">
+				<view class="price"></view>
+				<view class="discount"></view>
+			</view>
+		</view>
+	</view>
+</block>
+<!-- 商品展示 end -->
+
+

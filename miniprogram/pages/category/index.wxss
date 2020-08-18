@@ -1,0 +1,9 @@
+/* pages/category/index.wxss */
+/*page{
+	background-color: red;
+}*/
+.view{
+	background-color: #f8f8f9;
+	height: 100px;
+	width: 100px;
+}
